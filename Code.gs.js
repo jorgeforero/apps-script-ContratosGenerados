@@ -94,7 +94,7 @@ function onOpen() {
 **/
 function getGetDocSB() {  
   var tpl_form = HtmlService.createHtmlOutputFromFile( 'tpl_sb_createDoc.html' ).getContent();
-  // Despliegue del Panel
+  // Despliegue del Panel Lateral
   var tpl_form_d = HtmlService.createHtmlOutput( tpl_form ).setTitle( 'Generar Documento' );
   SpreadsheetApp.getUi().showSidebar( tpl_form_d );
 };
